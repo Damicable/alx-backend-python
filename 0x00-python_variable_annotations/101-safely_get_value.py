@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""A type annotiontio function"""
 
 
 from typing import TypeVar, Dict, Any

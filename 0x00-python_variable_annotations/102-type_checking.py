@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""A function validation with mypy"""
 
 
 from typing import Tuple, Any

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Duck-type annotation function"""
 
 
 from typing import List, Optional, Union
