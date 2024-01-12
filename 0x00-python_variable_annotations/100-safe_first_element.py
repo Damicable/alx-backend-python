@@ -1,13 +1,23 @@
-#!/usr/bin/env ython3
-"""Duck-type annotation"""
+#!/usr/bin/env python3
 
 
+from typing import List, Optional, Union
 
-def safe_first_element(lst):
+
+def safe_first_element(lst: List[Union[int, float, str]]) -> Optional[Union[int, float, str]]:
     """
-    A function that impements a duck-type annotation
+    Returns the first element of a list if it exists, otherwise returns None.
+
+    Args:
+        lst (List[Union[int, float, str]]): The input list.
+
+    Returns:
+        Optional[Union[int, float, str]]: The first element of the list if it exists, otherwise None.
     """
     if lst:
         return lst[0]
     else:
         return None
+
+if __name__ == "__main__":
+    pass
