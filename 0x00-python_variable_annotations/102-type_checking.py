@@ -7,15 +7,12 @@ from typing import Tuple, Any
 
 def zoom_array(lst: Tuple[Any], factor: int = 2) -> Tuple[Any]:
     """
-    A function that zooms into the array by repeating each element based
-    on the specified factor.
+    zoom_array - A function that zooms into the array by repeating each
+    element based on the specified factor.
+    @lst: The input array.
+    @factor: The zoom factor. Defaults to 2.
 
-    Args:
-        lst (Tuple[Any]): The input array.
-        factor (int, optional): The zoom factor. Defaults to 2.
-
-    Returns:
-        Tuple[Any]: The zoomed-in array.
+    Returns: The zoomed-in array.
     """
     zoomed_in: Tuple[Any] = tuple(
         item for item in lst

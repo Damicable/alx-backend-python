@@ -7,13 +7,11 @@ from typing import List, Optional, Union
 
 def safe_first_element(lst: List[Union[int, float, str]]) -> Optional[Union[int, float, str]]:
     """
-    Returns the first element of a list if it exists, otherwise returns None.
+    safe_first_element - function that returns the first element of a
+    list if it exists.
+    @lst: The input list.
 
-    Args:
-        lst (List[Union[int, float, str]]): The input list.
-
-    Returns:
-        Optional[Union[int, float, str]]: The first element of the list if it exists, otherwise None.
+    Returns: The first element of the list if it exists, otherwise None.
     """
     if lst:
         return lst[0]
