@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Multiplier function module"""
 
-froom typing import Callable
+
+from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
