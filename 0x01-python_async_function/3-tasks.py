@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""This module defines a regular function for creating an asyncio.Task"""
+"""This module defines a function for creating an asyncio.Task"""
 
 
 import asyncio
-from typing import Task
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
