@@ -2,10 +2,12 @@
 """Duck-type annotation function"""
 
 
-from typing import List, Optional, Union
+from typing import List, Optional, TypeVar
+
+T = TypeVar('T')
 
 
-def safe_first_element(lst: List[Union[int, float, str]]) -> Optional[Union[int, float, str]]:
+def safe_first_element(lst: List[T]) -> Optional[T]:
     """
     safe_first_element - function that returns the first element of a
     list if it exists.
@@ -17,6 +19,3 @@ def safe_first_element(lst: List[Union[int, float, str]]) -> Optional[Union[int,
         return lst[0]
     else:
         return None
-
-if __name__ == "__main__":
-    pass
