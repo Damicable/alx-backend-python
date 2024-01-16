@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""
-This module defines an asynchronous generator coroutine that yields random numbers.
-"""
+"""This module defines an asynchronous generator coroutine that
+yields random numbers."""
 
 
 import asyncio
@@ -11,7 +10,8 @@ from typing import Generator
 
 async def async_generator() -> Generator[float, None, None]:
     """
-    Asynchronous generator coroutine that yields random numbers.
+    async_generator - Asynchronous generator coroutine function that
+    yields random numbers.
 
     Yields:
         int: Random number between 0 and 10.
