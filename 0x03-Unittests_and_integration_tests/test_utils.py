@@ -17,7 +17,6 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
         ({"a": {"b": 2}}, ("a", "b"), 2)
     ])
-
     def test_access_nested_map(self, nested_map, path_map, result_expec):
         """ Access nested method test"""
         self.assertEqual(access_nested_map(nested_map, path_map), result_expec)
@@ -26,7 +25,6 @@ class TestAccessNestedMap(unittest.TestCase):
         ({}, ("a",)),
         ({"a": 1}, ("a", "b"))
     ])
-
     def test_access_nested_map_exception(self, nested_map, path_map):
         """ Exception access nested method"""
         with self.assertRaises(KeyError) as error:
@@ -43,7 +41,6 @@ class TestGetJson(unittest.TestCase):
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False})
     ])
-
     def test_get_json(self, test_url, test_payload):
         """ Mock HTTP calls
         """
